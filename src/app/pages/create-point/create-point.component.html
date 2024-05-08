@@ -1,0 +1,14 @@
+<div class="create-point-container">
+    <form [formGroup]="createForm" (ngSubmit)="submit()">
+    <h2>Bater ponto</h2>
+      <mat-form-field>
+        <mat-label>Tipo de Ponto</mat-label>
+        <mat-select formControlName="pointType">
+          <mat-option *ngFor="let type of pointTypes" [value]="type.value">
+            {{ type.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Salvar</button>
+    </form>
+  </div>

@@ -1,0 +1,17 @@
+<div *ngIf="!isLoginPage()">
+<header class="navbar">
+  <div class="navbar-left">
+    <span class="app-name">Ponto fácil</span>
+  </div>
+  <div class="navbar-center">
+    <span >{{ currentTime }}</span>
+  </div>
+  <div class="navbar-right">
+    <button mat-raised-button color="warn" (click)="logout()">Sair</button>
+  </div>
+</header>
+</div>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

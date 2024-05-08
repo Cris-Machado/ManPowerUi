@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30;
+  }
+
+
+  
+  main {
+    margin-top: 60px; 
+  }
+
+  .app-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-left: 10px; 
+  }
